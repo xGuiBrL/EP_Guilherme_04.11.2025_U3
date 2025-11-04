@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">AcelerometerSensor</string>
+    <string name="x_coord">X: %f</string>
+    <string name="y_coord">Y: %f</string>
+    <string name="z_coord">Z: %f</string>
+    <string name="estado_del_sensor">ESTADO DEL SENSOR</string>
+    <string name="iniciando">Iniciando...</string>
+    <string name="precision">PRECISIÓN</string>
+    <string name="calculando">Calculando...</string>
+    <string name="mision_gravedad">MISIÓN GRAVEDAD</string>
+    <string name="detector_de_acelerometro">Detector de Acelerómetro, Giroscópio y Magnetismo</string>
+    <string name="coordenadas">COORDENADAS</string>
+    <string name="eje_x">Eje X:</string>
+    <string name="eje_y">Eje Y:</string>
+    <string name="eje_z">Eje Z:</string>
+
+    <string name="sensores_disponibles">Sensores disponibles</string>
+    <string name="detector_de_giroscopio">Detector de Giroscopio</string>
+    <string name="detector_de_magnetometro">Detector de Magnetómetro</string>
+    <string name="giroscopio">GIROSCOPIO (rad/s)</string>
+    <string name="magnetometro">MAGNETÓMETRO (µT)</string>
+    <string name="sensor_no_disponible">Sensor no disponible</string>
+    <string name="sin_rotacion">Sin rotación apreciable.</string>
+    <string name="rotacion_rapida">¡Rotación rápida detectada!</string>
+    <string name="rotacion_suave">Rotación suave.</string>
+    <string name="campo_alto">Campo magnético muy alto (posible interferencia).</string>
+    <string name="campo_bajo">Campo bajo (ambiente magnético débil).</string>
+    <string name="campo_normal">Campo magnético dentro de lo normal.</string>
+    <string name="sin_acelerometro">Tu dispositivo no tiene acelerómetro</string>
+    <string name="sin_giroscopio">Tu dispositivo no tiene giroscopio</string>
+    <string name="sin_magnetometro">Tu dispositivo no tiene magnetómetro</string>
+</resources>

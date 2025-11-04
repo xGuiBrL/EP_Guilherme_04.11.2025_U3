@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/tv_acelerometro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acelerometro"
+            android:layout_marginTop="4dp"
+            android:textSize="12sp"
+            android:textColor="@color/onSurfaceMedium" />
+
+        <TextView
+            android:id="@+id/estado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="4dp"
+            android:textSize="12sp"
+            android:textColor="@color/onSurfaceMedium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/chipBg"
+            app:cardCornerRadius="16dp"
+            app:strokeColor="@color/chipStroke"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Eje X"
+                    android:textSize="12sp"
+                    android:textColor="@color/onSurfaceMedium" />
+
+                <TextView
+                    android:id="@+id/xCoor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X: --"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/onSurfaceHigh" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/chipBg"
+            app:cardCornerRadius="16dp"
+            app:strokeColor="@color/chipStroke"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Eje Y"
+                    android:textSize="12sp"
+                    android:textColor="@color/onSurfaceMedium" />
+
+                <TextView
+                    android:id="@+id/yCoor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Y: --"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/onSurfaceHigh" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/chipBg"
+            app:cardCornerRadius="16dp"
+            app:strokeColor="@color/chipStroke"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Eje Z"
+                    android:textSize="12sp"
+                    android:textColor="@color/onSurfaceMedium" />
+
+                <TextView
+                    android:id="@+id/zCoor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Z: --"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/onSurfaceHigh" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/tv_giroscopio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giroscopio"
+            android:layout_marginTop="4dp"
+            android:textSize="12sp"
+            android:textColor="@color/onSurfaceMedium" />
+        <TextView
+            android:id="@+id/estadoGiro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="4dp"
+            android:textSize="12sp"
+            android:textColor="@color/onSurfaceMedium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/chipBg"
+            app:cardCornerRadius="16dp"
+            app:strokeColor="@color/chipStroke"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Eje X"
+                    android:textSize="12sp"
+                    android:textColor="@color/onSurfaceMedium" />
+
+                <TextView
+                    android:id="@+id/xGiro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X: --"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/onSurfaceHigh" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/chipBg"
+            app:cardCornerRadius="16dp"
+            app:strokeColor="@color/chipStroke"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Eje Y"
+                    android:textSize="12sp"
+                    android:textColor="@color/onSurfaceMedium" />
+
+                <TextView
+                    android:id="@+id/yGiro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Y: --"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/onSurfaceHigh" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/chipBg"
+            app:cardCornerRadius="16dp"
+            app:strokeColor="@color/chipStroke"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Eje Z"
+                    android:textSize="12sp"
+                    android:textColor="@color/onSurfaceMedium" />
+
+                <TextView
+                    android:id="@+id/zGiro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Z: --"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/onSurfaceHigh" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+</LinearLayout>

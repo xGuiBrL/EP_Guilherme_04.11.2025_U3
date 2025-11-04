@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Aquí insertas dinámicamente el SupportMapFragment -->
+    <FrameLayout
+        android:id="@+id/map_child_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Scrim sutil arriba para lectura del título si fuera necesario -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/scrim_top" />
+
+</FrameLayout>

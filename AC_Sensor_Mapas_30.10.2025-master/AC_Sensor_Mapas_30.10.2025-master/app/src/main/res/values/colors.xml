@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Superficies -->
+    <color name="surfaceCard">#121826</color>
+    <color name="strokeSoft">#233146</color>
+
+    <!-- Texto -->
+    <color name="onSurfaceHigh">#FFFFFF</color>
+    <color name="onSurfaceMedium">#C9D1D9</color>
+
+    <!-- Chips -->
+    <color name="chipBg">#0F1A2B</color>
+    <color name="chipStroke">#1F2C42</color>
+</resources>
