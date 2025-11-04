@@ -133,11 +133,11 @@ public class fragment_sensor extends Fragment implements SensorEventListener {
 
             double magnitud = Math.sqrt(xa * xa + ya * ya + za * za);
             if (magnitud > 11) {
-                estado.setText("¡Demasiado movimiento! Cuidado con el terremoto");
+                estado.setText("Brusco");
             } else if (magnitud < 9) {
-                estado.setText("¡Estás inclinando mucho el teléfono!");
+                estado.setText("Moderado");
             } else {
-                estado.setText("Todo estable. ¡Buen control de gravedad!");
+                estado.setText("Suave");
             }
         }
 
@@ -152,26 +152,17 @@ public class fragment_sensor extends Fragment implements SensorEventListener {
 
             double giroMag = Math.sqrt(gx * gx + gy * gy + gz * gz);
             if (giroMag > 3.0) {
-                estadoGiro.setText("¡Rotación rápida detectada!");
+                estadoGiro.setText("Brusco");
             } else if (giroMag < 0.2) {
-                estadoGiro.setText("Sin rotación apreciable.");
+                estadoGiro.setText("Moderado");
             } else {
-                estadoGiro.setText("Rotación suave.");
+                estadoGiro.setText("Suave");
             }
         }
     }
 
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
-        switch (accuracy) {
-            case SensorManager.SENSOR_STATUS_ACCURACY_HIGH:
-                break;
-            case SensorManager.SENSOR_STATUS_ACCURACY_MEDIUM:
-                break;
-            case SensorManager.SENSOR_STATUS_ACCURACY_LOW:
-                break;
-            case SensorManager.SENSOR_STATUS_UNRELIABLE:
-                break;
-        }
+
     }
 }

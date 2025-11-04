@@ -46,19 +46,13 @@ public class fragment_map extends Fragment implements OnMapReadyCallback {
         if (Marca == null) return;
 
         float color = BitmapDescriptorFactory.HUE_GREEN;
-        String title = "Movimientos" +
-                " Suave";
-
         if ("Moderado".equals(movementType)) {
             color = BitmapDescriptorFactory.HUE_YELLOW;
-            title = "Movimiento Moderado";
         } else if ("Brusco".equals(movementType)) {
             color = BitmapDescriptorFactory.HUE_RED;
-            title = "Movimiento Brusco";
         }
 
         Marca.setIcon(BitmapDescriptorFactory.defaultMarker(color));
-        Marca.setTitle(title);
     }
 
     private void checkGeofence(LatLng location) {
